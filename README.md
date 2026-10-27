@@ -14,3 +14,7 @@ This project is a simulated small office network built in Cisco Packet Tracer. I
 ## Project File
 
 The `.pkt` file in this repository can be opened in Cisco Packet Tracer.
+
+## Network Topology
+
+![Small office network topology](network-topology.png)
