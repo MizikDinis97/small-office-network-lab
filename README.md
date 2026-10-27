@@ -31,3 +31,9 @@ The `.pkt` file in this repository can be opened in Cisco Packet Tracer.
 - Configured DHCP pools on the router for both departments.
 - Configured router subinterfaces with 802.1Q encapsulation
   for inter-VLAN routing using the router-on-a-stick approach.
+
+## Connectivity Testing
+
+- Tested connectivity from Office-PC1 in VLAN 10 to
+  IT-PC1 in VLAN 20 using ping.
+- Result: 4 packets sent, 4 received, 0% packet loss.
