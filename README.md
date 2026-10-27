@@ -18,3 +18,16 @@ The `.pkt` file in this repository can be opened in Cisco Packet Tracer.
 ## Network Topology
 
 ![Small office network topology](network-topology.png)
+
+## VLAN Configuration
+
+- VLAN 10 — OFFICE: switch ports FastEthernet 0/1 and 0/2
+- VLAN 20 — IT: switch ports FastEthernet 0/3 and 0/4
+
+## Network Configuration
+
+- VLAN 10 (OFFICE): 192.168.10.0/24
+- VLAN 20 (IT): 192.168.20.0/24
+- Configured DHCP pools on the router for both departments.
+- Configured router subinterfaces with 802.1Q encapsulation
+  for inter-VLAN routing using the router-on-a-stick approach.
