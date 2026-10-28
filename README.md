@@ -60,6 +60,9 @@ All faults were resolved at the end of the exercise.
 - **Fix:** Changed the default gateway to `192.168.10.1`.
 - **Retest:** Ping to IT-PC1 (`192.168.20.11`) succeeded with
   4 replies and 0% packet loss.
+  
+![Incorrect default gateway](screenshots/01-wrong-gateway.png)
+![Successful ping after correcting the gateway](screenshots/02-gateway-fixed.png)
 
 ### 2. Incorrect Switch Port VLAN
 
@@ -72,6 +75,9 @@ All faults were resolved at the end of the exercise.
   `switchport access vlan 10`.
 - **Retest:** Ping to Office-PC2 succeeded with 4 replies
   and 0% packet loss.
+  
+  ![Fa0/2 incorrectly assigned to VLAN 20](screenshots/03-wrong-vlan.png)
+![Successful ping after restoring VLAN 10](screenshots/04-vlan-fixed.png)
 
 ### 3. Disabled DHCP Service
 
@@ -87,6 +93,9 @@ All faults were resolved at the end of the exercise.
   `192.168.10.1`. Pings to the gateway and IT-PC1 succeeded
   with 0% packet loss.
 
+  ![DHCP request failed](screenshots/05-dhcp-failed.png)
+![DHCP settings successfully received](screenshots/06-dhcp-restored.png)
+
 ### 4. Administratively Disabled Router Interface
 
 - **Symptom:** Office-PC2 could reach Office-PC1 in the same VLAN,
@@ -98,6 +107,9 @@ All faults were resolved at the end of the exercise.
 - **Fix:** Enabled `GigabitEthernet0/0` using `no shutdown`.
 - **Retest:** Ping to IT-PC1 (`192.168.20.11`) succeeded with
   4 replies and 0% packet loss.
+
+  ![Router interface administratively down](screenshots/07-interface-disabled.png)
+![Inter-VLAN connectivity restored](screenshots/08-connectivity-restored.png)
 
 ## Troubleshooting Skills Practised
 
